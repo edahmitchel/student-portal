@@ -1,5 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
-
+import vector1image from "../images/Vector-1.png"
+import vector from "../images/Vector.png"
+import vector2 from "../images/Vector-2.png"
 const SignIn = () => {
   return (
     <section className="container">
@@ -19,7 +21,7 @@ const FormLeft = () => {
   return (
     <div className="form__left">
       <div className="vector__1">
-        <img src="./images/Vector-1.png" alt="Vector-1" />
+        <img src={vector1image} alt="Vector-1" />
       </div>
 
       <p>
@@ -65,7 +67,7 @@ const FormLeft = () => {
       </form>
 
       <div className="vector">
-        <img src="./images/Vector.png" alt="Vector" />
+        <img src={vector} alt="Vector" />
       </div>
     </div>
   );
@@ -75,7 +77,7 @@ const FormRight = () => {
   return (
     <div className="form__right">
       <div className="form__right-img">
-        <img src="./images/Vector-2.png" alt="Vector-3" />
+        <img src={vector2} alt="Vector-3" />
       </div>
     </div>
   );
