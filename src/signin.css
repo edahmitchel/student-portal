@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #4264d0;
+  --black-color: #1e1e1e;
+  --green-color: #0c8b28;
+  --gray-color: #978f75;
+  --white-color: #f9f9f9;
+
+  --text-color: #636060;
+
+  --bd-color: #d9d9d9;
+  --bd-radius: 10px;
+
+  --container-width-lg: 100%;
+  --container-width-md: 92%;
+}
+
+.form__left p {
+  margin-bottom: 1rem;
+}
+
+.form__left p a {
+  color: var(--green-color);
+  text-decoration: underline;
+}
+
+.forgot__pass {
+  font-size: 0.7rem;
+  color: var(--gray-color);
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 524px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: var(--container-width-lg);
+    gap: 0;
+  }
+
+  form {
+    width: var(--container-width-md);
+  }
+
+  .form__left,
+  .form__right {
+    flex: 0;
+    margin: 0;
+  }
+
+  .form__right img {
+    opacity: 0;
+    /* display: none; */
+  }
+
+  .form__right {
+    background-color: transparent;
+    background: url(./images/Rectangle\ 13-1.png);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+  }
+
+  .form__left {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: var(--pure-white);
+    padding: 4rem 0 0 4rem;
+  }
+
+  .vector,
+  .vector__1 {
+    display: none;
+  }
+}
