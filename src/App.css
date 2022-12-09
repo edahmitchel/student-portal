@@ -316,5 +316,129 @@ li:active {
   font-size: 1rem;
   padding-left: 0.5rem;
 }
+
+@media (max-width: 724px) {
+  .aside {
+    width: 4rem;
+    padding-left: 0.5rem;
+  }
+
+  .navbar ul {
+    margin-top: 5rem;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    padding: 0.6rem 0;
+  }
+
+  .navbar ul li a {
+    font-size: 0.7rem;
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+
+  .navbar li:hover,
+  li:active {
+    border-right: 2px solid var(--primary-color);
+    background: var(--pure-white);
+    border-radius: var(--bd-radius);
+  }
+
+  /* dashboard section*/
+  .dashboard__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0rem;
+    width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+
+  .dashboard {
+    width: var(--container-width-lg);
+  }
+
+  .dashboard h2 {
+    font-size: 0.7rem;
+    color: var(--primary-color);
+  }
+
+  .head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+  }
+
+  .head__title span {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+  }
+
+  .head__search {
+    border: 1px solid var(--bd-color);
+    border-radius: var(--bd-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  .head__search i {
+    font-size: 0.7rem;
+  }
+
+  .head__search input {
+    background: transparent;
+  }
+  /* End of dashboard */
+
+  /* Submissions */
+  .submissions {
+    margin-top: 2rem;
+    width: var(--container-width-md);
+    margin: auto;
+  }
+
+  .submissions table {
+    background: var(--pure-white);
+    width: var(--container-width-lg);
+    border: 1px solid var(--bd-color);
+    border-radius: var(--bd-radius);
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+
+  .submissions table thead th {
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+
+  .submissions table tbody td {
+    padding: 1rem 0;
+    height: 2rem;
+    border-bottom: 1px solid var(--bd-color);
+    color: var(--text-color);
+  }
+
+  .download__btn {
+    width: fit-content;
+    color: var(--pure-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .download__btn i {
+    color: var(--pure-white);
+    font-size: 1rem;
+    padding-left: 0.5rem;
+  }
+}
 /* End of Submissions */
 /* END OF DASHBOARD STYLES */
