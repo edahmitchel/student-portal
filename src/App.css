@@ -51,6 +51,7 @@ img {
   padding: 0.5rem 2rem;
   text-align: center;
   font-size: 0.8rem;
+  /* margin-bottom: 0rem; */
 }
 
 .container {
@@ -146,9 +147,9 @@ p {
 }
 
 .form__btn {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   color: var(--white-color);
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .form__btn-2 {

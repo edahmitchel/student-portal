@@ -145,8 +145,8 @@ export const SubmitFormLeft = () => {
         <button type="submit" className="btn form__btn">
           Submit
         </button>
-        <button className="btn form__btn" onClick={admin}>
-          admin
+        <button className="btn form__btn admin__btn" onClick={admin}>
+          Admin
         </button>
       </form>
 
