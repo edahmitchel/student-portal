@@ -2,6 +2,7 @@ import vector1image from "../images/Vector-1.png";
 import vector from "../images/Vector.png";
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 export const SubmitFormLeft = () => {
 
   async function apiCall(params) {
@@ -21,7 +22,8 @@ export const SubmitFormLeft = () => {
     }
   };
 
-
+  const navigate = useNavigate()
+  const admin = () => navigate("/admin")
 
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");
@@ -134,6 +136,9 @@ export const SubmitFormLeft = () => {
 
         <button type="submit" className="btn form__btn">
           Submit
+        </button>
+        <button className="btn form__btn" onClick={admin}>
+          admin
         </button>
       </form>
 
