@@ -368,7 +368,7 @@ li:active {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 2rem 3rem;
+    padding: 2rem 0rem;
     margin: 0 auto;
   }
 
@@ -404,25 +404,26 @@ li:active {
   }
 
   .submissions table {
-    background: var(--pure-white);
-    width: var(--container-width-lg);
-    border: 1px solid var(--bd-color);
-    border-radius: var(--bd-radius);
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     transition: all 300ms ease;
   }
 
   .submissions table thead th {
-    text-transform: uppercase;
-    color: var(--primary-color);
+    font-size: 0.7rem;
   }
 
   .submissions table tbody td {
-    padding: 1rem 0;
-    height: 2rem;
-    border-bottom: 1px solid var(--bd-color);
-    color: var(--text-color);
+    padding: 0.7rem 0.5rem;
+    height: 0.6rem;
+  }
+
+  .submissions table tbody td:first-child {
+    display: none;
+  }
+
+  .submissions table tbody td:last-child {
+    display: none;
   }
 
   .download__btn {
