@@ -31,7 +31,7 @@
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 524px) {
+@media (max-width: 724px) {
   .container {
     flex-direction: column-reverse;
     justify-content: center;
@@ -51,12 +51,11 @@
 
   .form__right img {
     opacity: 0;
-    /* display: none; */
+    display: none;
   }
 
   .form__right {
     background-color: transparent;
-    background: url(./images/Rectangle\ 13-1.png);
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -71,7 +70,7 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: var(--pure-white);
-    padding: 4rem 0 0 4rem;
+    padding: 3rem 0 0 3rem;
   }
 
   .vector,
