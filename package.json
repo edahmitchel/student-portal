@@ -2,7 +2,7 @@
   "name": "student-portal",
   "private": true,
   "version": "0.0.0",
-  "proxy": "https://gleaming-tuna-fashion.cyclic.app",
+  "proxy": "https://studentprojectbackend.onrender.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

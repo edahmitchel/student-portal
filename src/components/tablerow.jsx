@@ -38,7 +38,7 @@ const TableRow = ({ student }) => {
                 <td>{student?.registrationNumber}</td>
                 <td>
 
-                    <a href={"https://gleaming-tuna-fashion.cyclic.app/student/" + student._id} className="btn download__btn" type="" >
+                    <a href={"https://studentprojectbackend.onrender.com/student/" + student._id} className="btn download__btn" type="" >
                         Download <i className="uil uil-import"></i>
                     </a>
                 </td>

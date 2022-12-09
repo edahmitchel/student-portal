@@ -8,8 +8,9 @@ export const SubmitFormLeft = () => {
   const toast = useToast()
   async function apiCall(params) {
     // Submit form data to the endpoint
+    console.log("here we are")
     try {
-      const response = await axios.post('https://gleaming-tuna-fashion.cyclic.app//student/upload', params, {
+      const response = await axios.post('https://studentprojectbackend.onrender.com/student/upload', params, {
         header: {
           'Content-Type': 'multipart/form-data', // Specify that the request body is a multipart form
         }
@@ -27,7 +28,7 @@ export const SubmitFormLeft = () => {
       console.log(data?.student)
     } catch (error) {
       // Handle error\
-      throw (error)
+      console.log(error)
     }
   };
 
@@ -54,6 +55,7 @@ export const SubmitFormLeft = () => {
     formData.append("project", project);
 
     // Submit form data to the endpoint
+    console.log(firstname)
     apiCall(formData)
     // axios.post("http://localhost:3500/student/upload", formData);
   };

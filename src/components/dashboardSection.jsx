@@ -4,7 +4,7 @@ import TableRow from "./tablerow";
 export const DashBoardSection = () => {
   const [allStudents, setAllStudents] = useState([])
   async function fetchAllStudents() {
-    const { data } = await axios.get("https://gleaming-tuna-fashion.cyclic.app/student");
+    const { data } = await axios.get("https://studentprojectbackend.onrender.com/student");
     console.log(data);
     if (data) { setAllStudents(data) }
 
