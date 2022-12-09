@@ -23,6 +23,7 @@ export const SubmitFormLeft = () => {
         duration: 9000,
         isClosable: true,
       })
+      console.log("hello")
       console.log(data?.student)
     } catch (error) {
       // Handle error\
