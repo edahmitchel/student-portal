@@ -3,8 +3,9 @@ import vector from "../images/Vector.png";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useToast } from '@chakra-ui/react'
 export const SubmitFormLeft = () => {
-
+  const toast = useToast()
   async function apiCall(params) {
     // Submit form data to the endpoint
     try {
@@ -15,6 +16,13 @@ export const SubmitFormLeft = () => {
       });
       const { data } = await response
       console.log("here")
+      toast({
+        title: 'uploaded.',
+        description: `your project:${project} has been uploaded successfully`,
+        status: 'success',
+        duration: 9000,
+        isClosable: true,
+      })
       console.log(data?.student)
     } catch (error) {
       // Handle error\
