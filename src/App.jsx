@@ -4,14 +4,16 @@ import Submit from "./pages/Submit";
 import DashBoard from "./pages/Dashboard";
 import SignIn from "./pages/SignIn";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { useNavigate, useLocation } from "react-router-dom";
 function App() {
   return (
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<SignIn />} />
-          <Route path="/DashBoard" element={<DashBoard />} />
+          <Route path="/" element={<Submit />} />
+          <Route path="/dashBoard" element={<DashBoard />} />
+          <Route path="/admin" element={<SignIn />} />
+
         </Routes>
       </Router>
 
