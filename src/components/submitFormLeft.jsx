@@ -4,11 +4,14 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useToast } from '@chakra-ui/react'
+import { Spinner } from '@chakra-ui/react'
 export const SubmitFormLeft = () => {
   const toast = useToast()
+  const [loading, setLoading] = useState("false")
   async function apiCall(params) {
     // Submit form data to the endpoint
     console.log("here we are")
+    setLoading(true)
     try {
       const response = await axios.post('https://studentprojectbackend.onrender.com/student/upload', params, {
         header: {
@@ -26,9 +29,17 @@ export const SubmitFormLeft = () => {
       })
       console.log("hello")
       console.log(data?.student)
+      setLoading(false)
     } catch (error) {
       // Handle error\
       console.log(error)
+      toast({
+        title: "error",
+        description: `there was an error`,
+        status: 'error',
+        duration: 9000,
+        isClosable: true,
+      })
     }
   };
 
@@ -145,9 +156,9 @@ export const SubmitFormLeft = () => {
           />
         </div>
 
-        <button type="submit" className="btn form__btn">
+        {!loading ? <button type="submit" className="btn form__btn">
           Submit
-        </button>
+        </button> : <Spinner />}
         <button className="btn form__btn admin__btn" onClick={admin}>
           Admin
         </button>

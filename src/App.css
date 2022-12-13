@@ -52,8 +52,14 @@ img {
   text-align: center;
   font-size: 0.8rem;
   /* margin-bottom: 0rem; */
+  transition: all 500ms ease;
 }
 
+.btn:hover {
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+}
 .container {
   display: flex;
   align-items: center;
