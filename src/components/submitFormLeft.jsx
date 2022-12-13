@@ -7,7 +7,7 @@ import { useToast } from '@chakra-ui/react'
 import { Spinner } from '@chakra-ui/react'
 export const SubmitFormLeft = () => {
   const toast = useToast()
-  const [loading, setLoading] = useState("false")
+  const [loading, setLoading] = useState(false)
   async function apiCall(params) {
     // Submit form data to the endpoint
     console.log("here we are")
@@ -158,7 +158,7 @@ export const SubmitFormLeft = () => {
 
         {!loading ? <button type="submit" className="btn form__btn">
           Submit
-        </button> : <Spinner />}
+        </button> : <button className="btn form__btn"> <Spinner size='md' /></button>}
         <button className="btn form__btn admin__btn" onClick={admin}>
           Admin
         </button>
