@@ -1,10 +1,11 @@
 import vector1image from "../images/Vector-1.png";
+import { Link } from "react-router-dom";
 import vector from "../images/Vector.png";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useToast } from '@chakra-ui/react'
-import { Spinner } from '@chakra-ui/react'
+import { Spinner } from '@chakra-ui/react';
 export const SubmitFormLeft = () => {
   const toast = useToast()
   const [loading, setLoading] = useState(false)
@@ -78,6 +79,7 @@ export const SubmitFormLeft = () => {
       </div>
 
       <h1>Welcome!</h1>
+      <Link to="/Table">Go forward</Link>
       <form className="form" id="form"
         onSubmit={handleSubmit}
       >

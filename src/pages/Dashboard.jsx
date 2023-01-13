@@ -4,8 +4,6 @@ import { Aside } from "../components/aside";
 import { DashBoardSection } from "../components/dashboardSection";
 import TableRow from "../components/tablerow";
 import { students } from "../data";
-
-
 const DashBoard = () => {
   const [user, setUser] = useState()
   const navigate = useNavigate()
